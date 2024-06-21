@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11th Assembly UI'SU SRC Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="background">
+        <img src="MATTHIAS - MANIFESTOE-2.png" alt="Campaign Image Background">
+    </div>
+    <div class="form-header">Inaugural Sitting Attendance Form</div>
+    <div class="form-container">
+        <form id="attendanceForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfGKmAf5N1OB-eLEyZ0mfS6jbM1m6QAY75xeZgp-1gsSn8EQg/formResponse">
+            <div class="form-group">
+                <label for="id">Matric Number</label>
+                <input type="text" id="id" name="entry.26913752" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="entry.631176711" required>
+            </div>
+            <div class="form-group">
+                <label for="securityCode">Security Code</label>
+                <input type="text" id="securityCode" name="entry.681220977" required maxlength="4">
+            </div>
+            <div class="form-group">
+                <label for="confirmSecurityCode">Confirm Security Code</label>
+                <input type="text" id="confirmSecurityCode" name="entry.1019768912" required maxlength="4">
+            </div>
+             <div class="form-group">
+                <label>Purpose</label>
+                <div class="purpose-container">
+                    <label class="purpose-option">
+                        <input type="radio" name="entry.670461242" value="Entry" required>
+                        Entry
+                    </label>
+                    <label class="purpose-option">
+                        <input type="radio" name="entry.670461242" value="Exit">
+                        Exit
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">Some text in the Modal...</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

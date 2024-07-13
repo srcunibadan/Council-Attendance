@@ -6,13 +6,13 @@ document.getElementById("attendanceForm").onsubmit = function () {
         return false;
     }
     
-    const securityCode = document.getElementById("securityCode").value;
-    const confirmSecurityCode = document.getElementById("confirmSecurityCode").value;
-    if (securityCode !== confirmSecurityCode) {
-        showModal("Security codes do not match!");
-        return false;
-    }
-    // More validations here
+    // const securityCode = document.getElementById("securityCode").value;
+    // const confirmSecurityCode = document.getElementById("confirmSecurityCode").value;
+    // if (securityCode !== confirmSecurityCode) {
+    //     showModal("Security codes do not match!");
+    //     return false;
+    // }
+    // // More validations here
 
     const entryChecked = document.getElementById("entry").checked;
     const exitChecked = document.getElementById("exit").checked;
